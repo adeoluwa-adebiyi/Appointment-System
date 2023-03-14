@@ -11,6 +11,7 @@ pip install virtualenv
 Run :
 
 virtualenv env // or python -m virtualenv env
+
 source env/bin/activate
 
 pip install -r requirements.txt
@@ -50,6 +51,10 @@ POST http://localhost:8000/logout/ -> Please mind the trailing slash
     "username": "<email>",
     "password": "testuser123"
 }
+
+GraphQL Endpoint: http://localhost:8000/api/graphql 
+
+To access graphiql, visit the same link above in the browser
 
 Note: To login as different users in Postman, ensure that you logout first as session is cookie based
 
