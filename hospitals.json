@@ -1,0 +1,16 @@
+[
+    {
+        "name": "BMI The Runnymede Hospital",
+        "postcode": "KT16 0RQ",
+        "street": "Guildford St",
+        "city": "Chertsey",
+        "country": "United Kingdom"
+    },
+    {
+        "name": "New Victoria Hospital",
+        "postcode": "KT2 7EG",
+        "street": "Coombe Ln W",
+        "city": "Kingston upon Thames",
+        "country": "United Kingdom"
+    }
+]
