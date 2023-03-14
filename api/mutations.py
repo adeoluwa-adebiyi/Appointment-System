@@ -57,7 +57,7 @@ class AcceptAppointmentMutation(GQLMutation):
                                                                 ) - datetime.combine(app.date,
                                                  app.time).replace(hour=app.time.hour, minute=app.time.minute, second=app.time.second)
                 
-                if diff.hour <= 0 and diff.minutes <= 20:
+                if diff.hour <= 0 and diff.minutes < 20:
                     raise Exception(
                         "Error: appointment overlaps with previous appointment - {}".format(app.id))
 
@@ -69,7 +69,7 @@ class AcceptAppointmentMutation(GQLMutation):
                                                  _appointment.time).replace(hour=_appointment.time.hour, minute=_appointment.time.minute, second=_appointment.time.second
                                                                             )
                 
-                if diff.hour <= 0 and diff.minute <= 20:
+                if diff.hour <= 0 and diff.minute < 20:
                     raise Exception(
                         "Error: appointment overlaps with previous appointment - {}".format(app.id))
 
