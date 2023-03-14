@@ -23,6 +23,7 @@ docker-compose up
 Run:
 
 sh deactivate //deactivate virtualenv shell
+
 make seed
 
 ##### NOTE: This project makes use of jwt-auth.
